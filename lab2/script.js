@@ -12,7 +12,7 @@ window.onload = function () {
         return;
     }
     swapSecondAndFifthParagraphChildren();
-    calculateRectangleArea(12, 45);
+    calculatePentagonArea(12);
 }
 
 function swapSecondAndFifthParagraphChildren() {
@@ -24,12 +24,12 @@ function swapSecondAndFifthParagraphChildren() {
     five.replaceChildren(...twoClone.childNodes);
 }
 
-function calculateRectangleArea(width, height) {
-    const area = width * height;
+function calculatePentagonArea(side) {
+    const area = 0.25 * Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * side * side;
 
     const four = document.getElementById("four");
     const paragraph = document.createElement("p");
-    const text = document.createTextNode("Calculated area of a rectangle: " + area);
+    const text = document.createTextNode("Calculated area of a pentagon: " + area);
     paragraph.appendChild(text);
     four.appendChild(paragraph);
 }
@@ -50,7 +50,7 @@ function getCookie(cname) {
     return "";
 }
 
-function reverseRectangleArea() {
+function reverseNumber() {
     const number = document.forms["numberInput"]["number"].value;
     let reversed = reverseString(number);
     alert(reversed);
