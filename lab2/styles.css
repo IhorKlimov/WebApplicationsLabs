@@ -5,6 +5,23 @@ body {
     color: white;
 }
 
+form {
+    margin-top: 20px;
+}
+
+form input, form button {
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+div button{
+    margin-top: 10px;
+}
+
+form button{
+    margin-top: 5px;
+}
+
 ul {
     list-style-type: none;
     overflow: hidden;
@@ -48,16 +65,16 @@ li a:hover {
     flex-direction: column;
 }
 
-.one, .two, .three, .four, .five, .six, .seven {
-    border: 1px solid black;
-}
-
 .one {
     background: teal;
     color: white;
     padding: 20px;
     display: flex;
     flex-direction: row;
+}
+
+.one, .two, .three, .four, .five, .six, .seven{
+    border: 1px solid black;
 }
 
 .two {
