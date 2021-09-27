@@ -1,6 +1,6 @@
 window.onload = function () {
-    let borderColor = getCookie("borderColor");
-    if (borderColor.length > 0) {
+    let borderColor = localStorage.getItem("borderColor");
+    if (borderColor != null && borderColor.length > 0) {
         changeBorderColors(borderColor);
     }
     let reversedCookie = getCookie("reversed");
@@ -61,7 +61,7 @@ function reverseNumber() {
 function setBorderColor() {
     const color = document.forms["borderColor"]["color"].value;
     alert(color);
-    document.cookie = "borderColor=" + color;
+    localStorage.setItem('borderColor', color);
     changeBorderColors(color);
 }
 
