@@ -97,6 +97,8 @@ img {
     padding: 20px;
     background: teal;
     color: white;
+    display: flex;
+    flex-direction: row;
 }
 
 .title {
