@@ -50,6 +50,7 @@ li a:hover {
 
 .one, .two, .three, .four, .five, .six, .seven {
     border: 1px solid black;
+    align-items: center;
 }
 
 .one {
@@ -98,7 +99,36 @@ img {
     color: white;
 }
 
-.seven h1 {
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.rectangle {
+    width: 100px;
+    padding: 5px;
+    height: 50px;
+    background: white;
+    border: 1px solid black;
+    font-size: 30px;
+    color: black;
+}
+
+.rectangle.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle.left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.seven .rectangle {
     margin-left: auto;
-    text-align: end;
+
 }
